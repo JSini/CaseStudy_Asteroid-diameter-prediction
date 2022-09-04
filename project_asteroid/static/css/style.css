@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+
+body {
+
+    font-family: "Lato", sans-serif;
+	background: -webkit-linear-gradient(to right, #2B547E, #95B9C7);
+	background: linear-gradient(to right, #2B547E, #95B9C7);
+
+}
+
+.title {
+	color:white;
+	font-family: "Lato", sans-serif;
+	font-weight: 200;
+  }
+
+.upload-wrapper {
+	background-color: lightgrey;
+	border: 6px solid white;
+	border-style: outset;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 16px 32px;
+	margin:8px 0px;
+	margin-top: 100px;
+	cursor: pointer;
+	float: center;
+	width: 400px;
+	height: 150px;
+	margin-left:380px;
+
+}
+
+input[class="predict"] {
+  background-color: #43C6DB;
+  border: 6px solid white;
+  border-style: outset;
+  border-radius: 4px;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin:8px 0px;
+  margin-top:0;
+  cursor: pointer;
+  float: center;
+  width: 200px;
+  margin-left:380px;
+}
+
+input[class="refresh"] {
+  background-color: #BAB86C;
+  opacity:0.6;
+  border: 6px solid white;
+  border-style: outset;
+  border-radius: 2px;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin:8px 0px;
+  margin-top: 30px;
+  cursor: pointer;
+  float: center;
+  width: 150px;
+  margin-left:380px;
+}
+
+
+
+.result{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-left:380px;
+}
+
+
+.upload{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-left:5px;
+}
+

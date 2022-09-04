@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asteroid Diameter Predictor</title>
+    <link rel="stylesheet", href="/static/css/style.css"/>
+</head>
+<body>
+
+    <h1 class="title">Asteroid Diameter Predictor</h1>
+
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <div class="upload-wrapper">
+		<label> Upload your input (.csv format) file here...</label><br></br>
+        <input type="file" name="file"  accept=".csv" ><br></br>
+        <input type="submit" value="Upload" disabled="true">
+            {% if message %}
+            <p class="upload">{{message}}</p>
+            {% endif %}
+
+        </div>
+    </form>
+    <script>
+    document.querySelector("input[type=file]").onchange = ({
+      target: { value },
+    }) => {
+      document.querySelector("input[type=submit]").disabled = !value;
+    };
+    </script>
+    <form method="post" action="/predict" >
+        <div ><br><br>
+            <input class="predict" type="submit" value="Predict Diameter" >
+        </div>
+        {% if error %}
+            <p class="result">{{error}}</p>
+         {% endif %}
+         {% if result %}
+            <p class="result">{{result}}</p>
+         {% endif %}
+    </form>
+        <div >
+           <form action="/home" method="post">
+                  <input class="refresh" type="submit"  value="Refresh" />
+           </form>
+        </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
